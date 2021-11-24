@@ -34,6 +34,7 @@ int main(){
                 cout<<c1;
                 j++;
                 if(j==c && k!=n1){
+                    nn1=n1;
                     nn1-=(k+1);
                     //cout<<nn1;
                     break;
