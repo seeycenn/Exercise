@@ -1,3 +1,5 @@
+/* This code is used to generate specific pattern keyed in by user(according to specific chars, rows and columns) */
+
 #include<iostream>
 using namespace std;
 
@@ -21,19 +23,19 @@ int main(){
 
     int nn1=n1,nn2=n1;
     int strc;
-    for(int i=0;i<r;i++){
+    for(int i=0;i<r;i++){   //outer loop, rows
         cout<<endl;
         int j=0;
-        while(j<c){
+        while(j<c){ //inner loop, columns
 
             if(nn1!=n1 && j==0)
                 nn2=nn1;
-           for(int k=0;k<nn2;k++){
+           for(int k=0;k<nn2;k++){  //loop to print 1st char 
                 cout<<c1;
                 j++;
                 if(j==c && k!=n1){
                     nn1-=(k+1);
-                    cout<<nn1;
+                    //cout<<nn1;
                     break;
                 }
             }
@@ -41,7 +43,7 @@ int main(){
             if(j==c)
                 break;
 
-            for(int l=0;l<n2;l++){
+            for(int l=0;l<n2;l++){  //loop to print 2nd char
                 cout<<c2;
                 j++;
                 if(j==c && l!=n2){
