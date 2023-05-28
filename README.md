@@ -1,3 +1,3 @@
-# Exercise
+# C++ Tutorial
 
-# a repository used to store simple coding exercise 
+ tutorial for C++ beginners coding exercise 
